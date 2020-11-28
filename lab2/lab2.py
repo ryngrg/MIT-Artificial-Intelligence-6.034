@@ -95,7 +95,7 @@ def basic_bfs(graph, startNode, goalNode):
     exlist = []
     while len(agenda)>0:
         current=agenda.pop(0)
-        exlist += current[-1]
+        exlist += [current[-1]]
         if current[-1]==goalNode:
             return current
         npaths = extensions(graph, current)       
